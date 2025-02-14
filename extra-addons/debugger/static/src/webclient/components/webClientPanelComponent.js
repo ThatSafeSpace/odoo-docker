@@ -11,7 +11,7 @@ export class WebClientPanelComponent extends Component {
 		    appHeaders.append("Sec-Fetch-Mode", "navigate");
 		    appHeaders.append( "Sec-Fetch-Site", 'none');
 		    appHeaders.append("Sec-Fetch-User", "?1");
-		    this.response = await fetch('"http://localhost:8069/odoo/sales/7?debug=1"', {
+		    this.response = await fetch('http://localhost:8069/odoo/sales/7?debug=1', {
 		        headers: appHeaders
             }).then(function(response) {
               return (response.text());
