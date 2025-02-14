@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="debugger.WebClient.panel" t-inherit="web.WebClient" t-inherit-mode="extension">
+        <xpath expr="//t/NavBar" position="after">
+            <t t-if="this.env.debug">
+                <WebClientPanelComponent/>
+            </t>
+        </xpath>
+    </t>
+</templates>
